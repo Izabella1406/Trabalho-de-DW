@@ -32,3 +32,12 @@ INSERT INTO livro (idlivro, titulo, ano_publicacao, idautor, idcategoria) VALUES
 (5, '1984', '1949-06-08', 5, 3),
 (6, 'O Iluminado', '1977-01-28', 4, 6);
 
+Reserva-
+INSERT INTO reserva (idreserva, data_reserva, idusuario, idlivro)
+VALUES
+(1, '2026-11-27', 1, 1),
+(2, '2026-11-27', 2, 2),
+(3, '2026-11-27', 3, 3),
+(4, '2026-11-27', 1, 2),
+(5, '2026-11-27', 2, 3);
+

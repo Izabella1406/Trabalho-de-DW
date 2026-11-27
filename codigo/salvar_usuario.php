@@ -13,4 +13,4 @@ $comando = mysqli_prepare($conexao, $sql);
 mysqli_stmt_bind_param($comando, "ssss", $nome, $email, $telefone, $senha);
 mysqli_stmt_execute($comando);
 
-header("Location: form_usuario.php");
+header("Location: index.php");

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Usuario</title>
 </head>
 <body>
-     <form action= "salvar_usuario.php" >
+    <h1> Cadastro de Usuario</h1>
+    
+     <form action= "salvar_usuario.php" method= "GET">
 
         Nome: <br>
         <input type="text" name="nome"> <br><br>

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Reserva</title>
 </head>
 <body>
+    <h1> Cadastro de Reserva</h1>
+
     <form action="salvar_reserva.php" method="GET">
         Data de Reserva:
-        <input type="text" name="data_reserva"> <br><br>
+        <input type="date" name="data_reserva"> <br><br>
 
         Id do Usuário:
          <select name="idusuario">
@@ -30,8 +32,10 @@
 
                 echo "<option value='$usuario_id'>$usuario_nome</option>";
             }
-         </select>
+        
          ?>
+         </select>
+         <br><br>
       
        Id do Livro:
        <select name="idlivro">
@@ -46,11 +50,16 @@
 
             while ($livros = mysqli_fetch_array($livro)) {
             $livro_id = $livros['idlivro'];
-            $titulo_livro = $livros['titulo'];
-            $ano_publicacao = $livros['ano_publicacao'];
+            $livro_titulo = $livros['titulo'];
+             echo "<option value='$livro_id'>$livro_titulo</option>";
+            }
 
 
-       </select>
+    
+       ?>
+        </select>
+        <br><br>
+        <input type="submit" value="Salvar">
 
 </body>
 </html>
